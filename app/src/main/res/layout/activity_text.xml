@@ -1,0 +1,98 @@
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#61625e"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+
+        android:gravity="end"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/icon"
+            android:textAllCaps="false"
+            android:id="@+id/corner_button"
+            android:textColor="#f1eded"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="Done"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:background="#585151"
+        android:layout_marginTop="30dp"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:minHeight="30dp"
+            android:layout_height="match_parent">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:id="@+id/edit_text"
+                android:textColor="#f0ecec"
+                android:hint="Enter Here Text "
+                />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#343131"
+        android:layout_weight="9">
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/seek_bar"
+            android:thumb="@drawable/doll"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:background="#252222"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color"
+            android:layout_weight="1"
+            android:onClick="changeButton"
+            android:textAllCaps="false"
+            android:id="@+id/color_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:drawableTop="@drawable/color"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Font"
+            android:onClick="changeButton"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:id="@+id/font_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:drawableTop="@drawable/font"/>
+    </LinearLayout>
+
+</LinearLayout>
