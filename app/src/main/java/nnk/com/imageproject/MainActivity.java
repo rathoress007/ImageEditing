@@ -1,4 +1,4 @@
-package nnk.com.imageproject.activity.;
+package nnk.com.imageproject;
 
 import android.content.Intent;
 import android.os.Bundle;
